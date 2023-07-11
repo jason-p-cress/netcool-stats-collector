@@ -1,0 +1,194 @@
+2023-07-11 15:01:36,795 INFO     Collection started at: 11/07/2023 15:01:36
+
+2023-07-11 15:05:00,063 DEBUG    received the following: {"EAST_AGG_P_profiler_report.log1": {"resourceApp": "", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "EAST_AGG_P", "metrics": {"EAST_AGG_P:Impact:AppIducTime": {"value": 0.005215, "resetCounter": true}, "EAST_AGG_P::TotalIducTime": {"value": 0.007157, "resetCounter": true}, "EAST_AGG_P:GATEWAY:AppIducTime": {"value": 0.001339, "resetCounter": true}, "EAST_AGG_P:AUTH-Impact:AppIducTime": {"value": 0.0, "resetCounter": true}, "EAST_AGG_P:WEBTOP:AppIducTime": {"value": 0.000602, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/netcool/omnibus/log/EAST_AGG_P_profiler_report.log1", "inode": 269311317, "endTimeStamp": "071123-2200", "logFileType": "profilestats"}}
+2023-07-11 15:05:00,063 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2200__071123-2205.csv
+2023-07-11 15:05:00,063 DEBUG    Need to write line for:EAST_AGG_P:Impact:AppIducTime
+2023-07-11 15:05:00,064 DEBUG    Need to write line for:EAST_AGG_P::TotalIducTime
+2023-07-11 15:05:00,064 DEBUG    Need to write line for:EAST_AGG_P:GATEWAY:AppIducTime
+2023-07-11 15:05:00,064 DEBUG    Need to write line for:EAST_AGG_P:AUTH-Impact:AppIducTime
+2023-07-11 15:05:00,064 DEBUG    Need to write line for:EAST_AGG_P:WEBTOP:AppIducTime
+2023-07-11 15:05:00,093 DEBUG    received the following: {"NCIPRIMARY_omnibuseventreader.log": {"resourceApp": "omnibuseventreader", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:omnibuseventreader:Updates": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Time": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Memory": {"value": 223675007, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NumReaderBuffer": {"value": 3, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:OSQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewEventsReadSec": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewRead": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Read": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:ReadBuffer": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:EventsReadSec": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_omnibuseventreader.log", "inode": 269307369, "endTimeStamp": "071123-2200", "logFileType": "eventreader"}, "NCIPRIMARY_eventprocessor.log": {"resourceApp": "eventprocessor", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:eventprocessor:ProcessingThreads": {"value": 9, "resetCounter": true}, "NCIPRIMARY:eventprocessor:DeltaQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:CurrentQueueSize": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:EventRatePerMinute": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_eventprocessor.log", "inode": 272085590, "endTimeStamp": "071123-2200", "logFileType": "eventprocessor"}}
+2023-07-11 15:05:00,093 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2200__071123-2205.csv
+2023-07-11 15:05:00,093 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Updates
+2023-07-11 15:05:00,093 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Time
+2023-07-11 15:05:00,094 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Memory
+2023-07-11 15:05:00,094 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NumReaderBuffer
+2023-07-11 15:05:00,094 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:ReadBuffer
+2023-07-11 15:05:00,094 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewEventsReadSec
+2023-07-11 15:05:00,094 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewRead
+2023-07-11 15:05:00,094 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Read
+2023-07-11 15:05:00,094 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:OSQueue
+2023-07-11 15:05:00,094 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:EventsReadSec
+2023-07-11 15:05:00,094 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2200__071123-2205.csv
+2023-07-11 15:05:00,094 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:EventRatePerMinute
+2023-07-11 15:05:00,095 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:DeltaQueue
+2023-07-11 15:05:00,095 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:CurrentQueueSize
+2023-07-11 15:05:00,095 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:ProcessingThreads
+2023-07-11 15:10:00,029 DEBUG    received the following: {"EAST_AGG_P_profiler_report.log1": {"resourceApp": "", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "EAST_AGG_P", "metrics": {"EAST_AGG_P:Impact:AppIducTime": {"value": 0.00532, "resetCounter": true}, "EAST_AGG_P::TotalIducTime": {"value": 0.007245, "resetCounter": true}, "EAST_AGG_P:GATEWAY:AppIducTime": {"value": 0.001364, "resetCounter": true}, "EAST_AGG_P:AUTH-Impact:AppIducTime": {"value": 0.0, "resetCounter": true}, "EAST_AGG_P:WEBTOP:AppIducTime": {"value": 0.000561, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/netcool/omnibus/log/EAST_AGG_P_profiler_report.log1", "inode": 269311317, "endTimeStamp": "071123-2200", "logFileType": "profilestats"}}
+2023-07-11 15:10:00,030 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2205__071123-2210.csv
+2023-07-11 15:10:00,031 DEBUG    Need to write line for:EAST_AGG_P:Impact:AppIducTime
+2023-07-11 15:10:00,031 DEBUG    Need to write line for:EAST_AGG_P::TotalIducTime
+2023-07-11 15:10:00,031 DEBUG    Need to write line for:EAST_AGG_P:GATEWAY:AppIducTime
+2023-07-11 15:10:00,031 DEBUG    Need to write line for:EAST_AGG_P:AUTH-Impact:AppIducTime
+2023-07-11 15:10:00,031 DEBUG    Need to write line for:EAST_AGG_P:WEBTOP:AppIducTime
+2023-07-11 15:10:00,089 DEBUG    received the following: {"NCIPRIMARY_omnibuseventreader.log": {"resourceApp": "omnibuseventreader", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:omnibuseventreader:Updates": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Time": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Memory": {"value": 202337611, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NumReaderBuffer": {"value": 3, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:OSQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewEventsReadSec": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewRead": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Read": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:ReadBuffer": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:EventsReadSec": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_omnibuseventreader.log", "inode": 269307369, "endTimeStamp": "071123-2200", "logFileType": "eventreader"}, "NCIPRIMARY_eventprocessor.log": {"resourceApp": "eventprocessor", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:eventprocessor:ProcessingThreads": {"value": 9, "resetCounter": true}, "NCIPRIMARY:eventprocessor:DeltaQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:CurrentQueueSize": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:EventRatePerMinute": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_eventprocessor.log", "inode": 272085590, "endTimeStamp": "071123-2200", "logFileType": "eventprocessor"}}
+2023-07-11 15:10:00,090 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2205__071123-2210.csv
+2023-07-11 15:10:00,090 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Updates
+2023-07-11 15:10:00,090 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Time
+2023-07-11 15:10:00,090 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Memory
+2023-07-11 15:10:00,090 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NumReaderBuffer
+2023-07-11 15:10:00,091 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:ReadBuffer
+2023-07-11 15:10:00,091 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewEventsReadSec
+2023-07-11 15:10:00,091 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewRead
+2023-07-11 15:10:00,091 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Read
+2023-07-11 15:10:00,091 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:OSQueue
+2023-07-11 15:10:00,091 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:EventsReadSec
+2023-07-11 15:10:00,091 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2205__071123-2210.csv
+2023-07-11 15:10:00,091 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:EventRatePerMinute
+2023-07-11 15:10:00,091 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:DeltaQueue
+2023-07-11 15:10:00,091 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:CurrentQueueSize
+2023-07-11 15:10:00,091 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:ProcessingThreads
+2023-07-11 15:15:00,029 DEBUG    received the following: {"NCIPRIMARY_omnibuseventreader.log": {"resourceApp": "omnibuseventreader", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:omnibuseventreader:Updates": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Time": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Memory": {"value": 220636490, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NumReaderBuffer": {"value": 3, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:OSQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewEventsReadSec": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewRead": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Read": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:ReadBuffer": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:EventsReadSec": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_omnibuseventreader.log", "inode": 269307369, "endTimeStamp": "071123-2200", "logFileType": "eventreader"}, "NCIPRIMARY_eventprocessor.log": {"resourceApp": "eventprocessor", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:eventprocessor:ProcessingThreads": {"value": 9, "resetCounter": true}, "NCIPRIMARY:eventprocessor:DeltaQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:CurrentQueueSize": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:EventRatePerMinute": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_eventprocessor.log", "inode": 272085590, "endTimeStamp": "071123-2200", "logFileType": "eventprocessor"}}
+2023-07-11 15:15:00,030 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2210__071123-2215.csv
+2023-07-11 15:15:00,030 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Updates
+2023-07-11 15:15:00,031 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Time
+2023-07-11 15:15:00,031 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Memory
+2023-07-11 15:15:00,031 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NumReaderBuffer
+2023-07-11 15:15:00,031 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:ReadBuffer
+2023-07-11 15:15:00,031 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewEventsReadSec
+2023-07-11 15:15:00,031 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewRead
+2023-07-11 15:15:00,031 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Read
+2023-07-11 15:15:00,031 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:OSQueue
+2023-07-11 15:15:00,031 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:EventsReadSec
+2023-07-11 15:15:00,031 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2210__071123-2215.csv
+2023-07-11 15:15:00,031 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:EventRatePerMinute
+2023-07-11 15:15:00,032 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:DeltaQueue
+2023-07-11 15:15:00,032 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:CurrentQueueSize
+2023-07-11 15:15:00,032 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:ProcessingThreads
+2023-07-11 15:15:00,089 DEBUG    received the following: {"EAST_AGG_P_profiler_report.log1": {"resourceApp": "", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "EAST_AGG_P", "metrics": {"EAST_AGG_P:Impact:AppIducTime": {"value": 0.00496, "resetCounter": true}, "EAST_AGG_P::TotalIducTime": {"value": 0.007227, "resetCounter": true}, "EAST_AGG_P:GATEWAY:AppIducTime": {"value": 0.001456, "resetCounter": true}, "EAST_AGG_P:AUTH-Impact:AppIducTime": {"value": 0.000186, "resetCounter": true}, "EAST_AGG_P:WEBTOP:AppIducTime": {"value": 0.000625, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/netcool/omnibus/log/EAST_AGG_P_profiler_report.log1", "inode": 269311317, "endTimeStamp": "071123-2200", "logFileType": "profilestats"}}
+2023-07-11 15:15:00,090 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2210__071123-2215.csv
+2023-07-11 15:15:00,090 DEBUG    Need to write line for:EAST_AGG_P:Impact:AppIducTime
+2023-07-11 15:15:00,090 DEBUG    Need to write line for:EAST_AGG_P::TotalIducTime
+2023-07-11 15:15:00,090 DEBUG    Need to write line for:EAST_AGG_P:GATEWAY:AppIducTime
+2023-07-11 15:15:00,090 DEBUG    Need to write line for:EAST_AGG_P:AUTH-Impact:AppIducTime
+2023-07-11 15:15:00,090 DEBUG    Need to write line for:EAST_AGG_P:WEBTOP:AppIducTime
+2023-07-11 15:20:00,027 DEBUG    received the following: {"NCIPRIMARY_omnibuseventreader.log": {"resourceApp": "omnibuseventreader", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:omnibuseventreader:Updates": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Time": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Memory": {"value": 200811697, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NumReaderBuffer": {"value": 3, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:OSQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewEventsReadSec": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewRead": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Read": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:ReadBuffer": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:EventsReadSec": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_omnibuseventreader.log", "inode": 269307369, "endTimeStamp": "071123-2200", "logFileType": "eventreader"}, "NCIPRIMARY_eventprocessor.log": {"resourceApp": "eventprocessor", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:eventprocessor:ProcessingThreads": {"value": 9, "resetCounter": true}, "NCIPRIMARY:eventprocessor:DeltaQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:CurrentQueueSize": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:EventRatePerMinute": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_eventprocessor.log", "inode": 272085590, "endTimeStamp": "071123-2200", "logFileType": "eventprocessor"}}
+2023-07-11 15:20:00,028 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2215__071123-2220.csv
+2023-07-11 15:20:00,029 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Updates
+2023-07-11 15:20:00,029 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Time
+2023-07-11 15:20:00,029 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Memory
+2023-07-11 15:20:00,030 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NumReaderBuffer
+2023-07-11 15:20:00,030 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:ReadBuffer
+2023-07-11 15:20:00,030 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewEventsReadSec
+2023-07-11 15:20:00,030 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewRead
+2023-07-11 15:20:00,030 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Read
+2023-07-11 15:20:00,030 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:OSQueue
+2023-07-11 15:20:00,030 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:EventsReadSec
+2023-07-11 15:20:00,031 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2215__071123-2220.csv
+2023-07-11 15:20:00,031 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:EventRatePerMinute
+2023-07-11 15:20:00,031 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:DeltaQueue
+2023-07-11 15:20:00,031 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:CurrentQueueSize
+2023-07-11 15:20:00,031 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:ProcessingThreads
+2023-07-11 15:20:00,043 DEBUG    received the following: {"EAST_AGG_P_profiler_report.log1": {"resourceApp": "", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "EAST_AGG_P", "metrics": {"EAST_AGG_P:Impact:AppIducTime": {"value": 0.005196, "resetCounter": true}, "EAST_AGG_P::TotalIducTime": {"value": 0.00702, "resetCounter": true}, "EAST_AGG_P:GATEWAY:AppIducTime": {"value": 0.001282, "resetCounter": true}, "EAST_AGG_P:AUTH-Impact:AppIducTime": {"value": 0.0, "resetCounter": true}, "EAST_AGG_P:WEBTOP:AppIducTime": {"value": 0.000544, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/netcool/omnibus/log/EAST_AGG_P_profiler_report.log1", "inode": 269311317, "endTimeStamp": "071123-2200", "logFileType": "profilestats"}}
+2023-07-11 15:20:00,043 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2215__071123-2220.csv
+2023-07-11 15:20:00,043 DEBUG    Need to write line for:EAST_AGG_P:Impact:AppIducTime
+2023-07-11 15:20:00,044 DEBUG    Need to write line for:EAST_AGG_P::TotalIducTime
+2023-07-11 15:20:00,044 DEBUG    Need to write line for:EAST_AGG_P:GATEWAY:AppIducTime
+2023-07-11 15:20:00,044 DEBUG    Need to write line for:EAST_AGG_P:AUTH-Impact:AppIducTime
+2023-07-11 15:20:00,044 DEBUG    Need to write line for:EAST_AGG_P:WEBTOP:AppIducTime
+2023-07-11 15:25:00,053 DEBUG    received the following: {"NCIPRIMARY_omnibuseventreader.log": {"resourceApp": "omnibuseventreader", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:omnibuseventreader:Updates": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Time": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Memory": {"value": 183872908, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NumReaderBuffer": {"value": 3, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:OSQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewEventsReadSec": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewRead": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Read": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:ReadBuffer": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:EventsReadSec": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_omnibuseventreader.log", "inode": 269307369, "endTimeStamp": "071123-2200", "logFileType": "eventreader"}, "NCIPRIMARY_eventprocessor.log": {"resourceApp": "eventprocessor", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:eventprocessor:ProcessingThreads": {"value": 9, "resetCounter": true}, "NCIPRIMARY:eventprocessor:DeltaQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:CurrentQueueSize": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:EventRatePerMinute": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_eventprocessor.log", "inode": 272085590, "endTimeStamp": "071123-2200", "logFileType": "eventprocessor"}}
+2023-07-11 15:25:00,053 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2220__071123-2225.csv
+2023-07-11 15:25:00,054 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Updates
+2023-07-11 15:25:00,054 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Time
+2023-07-11 15:25:00,054 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Memory
+2023-07-11 15:25:00,054 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NumReaderBuffer
+2023-07-11 15:25:00,054 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:ReadBuffer
+2023-07-11 15:25:00,054 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewEventsReadSec
+2023-07-11 15:25:00,054 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewRead
+2023-07-11 15:25:00,054 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Read
+2023-07-11 15:25:00,054 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:OSQueue
+2023-07-11 15:25:00,054 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:EventsReadSec
+2023-07-11 15:25:00,055 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2220__071123-2225.csv
+2023-07-11 15:25:00,055 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:EventRatePerMinute
+2023-07-11 15:25:00,055 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:DeltaQueue
+2023-07-11 15:25:00,055 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:CurrentQueueSize
+2023-07-11 15:25:00,055 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:ProcessingThreads
+2023-07-11 15:25:00,099 DEBUG    received the following: {"EAST_AGG_P_profiler_report.log1": {"resourceApp": "", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "EAST_AGG_P", "metrics": {"EAST_AGG_P:Impact:AppIducTime": {"value": 0.00499, "resetCounter": true}, "EAST_AGG_P::TotalIducTime": {"value": 0.006886, "resetCounter": true}, "EAST_AGG_P:GATEWAY:AppIducTime": {"value": 0.001274, "resetCounter": true}, "EAST_AGG_P:AUTH-Impact:AppIducTime": {"value": 0.0, "resetCounter": true}, "EAST_AGG_P:WEBTOP:AppIducTime": {"value": 0.000623, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/netcool/omnibus/log/EAST_AGG_P_profiler_report.log1", "inode": 269311317, "endTimeStamp": "071123-2200", "logFileType": "profilestats"}}
+2023-07-11 15:25:00,099 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2220__071123-2225.csv
+2023-07-11 15:25:00,099 DEBUG    Need to write line for:EAST_AGG_P:Impact:AppIducTime
+2023-07-11 15:25:00,099 DEBUG    Need to write line for:EAST_AGG_P::TotalIducTime
+2023-07-11 15:25:00,099 DEBUG    Need to write line for:EAST_AGG_P:GATEWAY:AppIducTime
+2023-07-11 15:25:00,100 DEBUG    Need to write line for:EAST_AGG_P:AUTH-Impact:AppIducTime
+2023-07-11 15:25:00,100 DEBUG    Need to write line for:EAST_AGG_P:WEBTOP:AppIducTime
+2023-07-11 15:30:00,039 DEBUG    received the following: {"EAST_AGG_P_profiler_report.log1": {"resourceApp": "", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "EAST_AGG_P", "metrics": {"EAST_AGG_P:Impact:AppIducTime": {"value": 0.004751, "resetCounter": true}, "EAST_AGG_P::TotalIducTime": {"value": 0.006568, "resetCounter": true}, "EAST_AGG_P:GATEWAY:AppIducTime": {"value": 0.001174, "resetCounter": true}, "EAST_AGG_P:AUTH-Impact:AppIducTime": {"value": 0.0, "resetCounter": true}, "EAST_AGG_P:WEBTOP:AppIducTime": {"value": 0.000642, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/netcool/omnibus/log/EAST_AGG_P_profiler_report.log1", "inode": 269311317, "endTimeStamp": "071123-2200", "logFileType": "profilestats"}}
+2023-07-11 15:30:00,040 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2225__071123-2230.csv
+2023-07-11 15:30:00,040 DEBUG    Need to write line for:EAST_AGG_P:Impact:AppIducTime
+2023-07-11 15:30:00,041 DEBUG    Need to write line for:EAST_AGG_P::TotalIducTime
+2023-07-11 15:30:00,041 DEBUG    Need to write line for:EAST_AGG_P:GATEWAY:AppIducTime
+2023-07-11 15:30:00,041 DEBUG    Need to write line for:EAST_AGG_P:AUTH-Impact:AppIducTime
+2023-07-11 15:30:00,041 DEBUG    Need to write line for:EAST_AGG_P:WEBTOP:AppIducTime
+2023-07-11 15:30:00,071 DEBUG    received the following: {"NCIPRIMARY_omnibuseventreader.log": {"resourceApp": "omnibuseventreader", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:omnibuseventreader:Updates": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Time": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Memory": {"value": 166282174, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NumReaderBuffer": {"value": 3, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:OSQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewEventsReadSec": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewRead": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Read": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:ReadBuffer": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:EventsReadSec": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_omnibuseventreader.log", "inode": 269307369, "endTimeStamp": "071123-2200", "logFileType": "eventreader"}, "NCIPRIMARY_eventprocessor.log": {"resourceApp": "eventprocessor", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:eventprocessor:ProcessingThreads": {"value": 9, "resetCounter": true}, "NCIPRIMARY:eventprocessor:DeltaQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:CurrentQueueSize": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:EventRatePerMinute": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_eventprocessor.log", "inode": 272085590, "endTimeStamp": "071123-2200", "logFileType": "eventprocessor"}}
+2023-07-11 15:30:00,071 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2225__071123-2230.csv
+2023-07-11 15:30:00,072 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Updates
+2023-07-11 15:30:00,072 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Time
+2023-07-11 15:30:00,072 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Memory
+2023-07-11 15:30:00,072 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NumReaderBuffer
+2023-07-11 15:30:00,072 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:ReadBuffer
+2023-07-11 15:30:00,072 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewEventsReadSec
+2023-07-11 15:30:00,072 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewRead
+2023-07-11 15:30:00,072 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Read
+2023-07-11 15:30:00,072 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:OSQueue
+2023-07-11 15:30:00,072 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:EventsReadSec
+2023-07-11 15:30:00,072 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2225__071123-2230.csv
+2023-07-11 15:30:00,073 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:EventRatePerMinute
+2023-07-11 15:30:00,073 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:DeltaQueue
+2023-07-11 15:30:00,073 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:CurrentQueueSize
+2023-07-11 15:30:00,073 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:ProcessingThreads
+2023-07-11 15:35:00,047 DEBUG    received the following: {"NCIPRIMARY_omnibuseventreader.log": {"resourceApp": "omnibuseventreader", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:omnibuseventreader:Updates": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Time": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Memory": {"value": 152328868, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NumReaderBuffer": {"value": 3, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:OSQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewEventsReadSec": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewRead": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Read": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:ReadBuffer": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:EventsReadSec": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_omnibuseventreader.log", "inode": 269307369, "endTimeStamp": "071123-2200", "logFileType": "eventreader"}, "NCIPRIMARY_eventprocessor.log": {"resourceApp": "eventprocessor", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:eventprocessor:ProcessingThreads": {"value": 9, "resetCounter": true}, "NCIPRIMARY:eventprocessor:DeltaQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:CurrentQueueSize": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:EventRatePerMinute": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_eventprocessor.log", "inode": 272085590, "endTimeStamp": "071123-2200", "logFileType": "eventprocessor"}}
+2023-07-11 15:35:00,048 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2230__071123-2235.csv
+2023-07-11 15:35:00,049 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Updates
+2023-07-11 15:35:00,049 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Time
+2023-07-11 15:35:00,049 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Memory
+2023-07-11 15:35:00,050 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NumReaderBuffer
+2023-07-11 15:35:00,050 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:ReadBuffer
+2023-07-11 15:35:00,050 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewEventsReadSec
+2023-07-11 15:35:00,050 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewRead
+2023-07-11 15:35:00,050 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Read
+2023-07-11 15:35:00,050 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:OSQueue
+2023-07-11 15:35:00,050 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:EventsReadSec
+2023-07-11 15:35:00,050 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2230__071123-2235.csv
+2023-07-11 15:35:00,050 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:EventRatePerMinute
+2023-07-11 15:35:00,051 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:DeltaQueue
+2023-07-11 15:35:00,051 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:CurrentQueueSize
+2023-07-11 15:35:00,051 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:ProcessingThreads
+2023-07-11 15:35:00,087 DEBUG    received the following: {"EAST_AGG_P_profiler_report.log1": {"resourceApp": "", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "EAST_AGG_P", "metrics": {"EAST_AGG_P:Impact:AppIducTime": {"value": 0.004773, "resetCounter": true}, "EAST_AGG_P::TotalIducTime": {"value": 0.006538, "resetCounter": true}, "EAST_AGG_P:GATEWAY:AppIducTime": {"value": 0.001215, "resetCounter": true}, "EAST_AGG_P:AUTH-Impact:AppIducTime": {"value": 0.0, "resetCounter": true}, "EAST_AGG_P:WEBTOP:AppIducTime": {"value": 0.00055, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/netcool/omnibus/log/EAST_AGG_P_profiler_report.log1", "inode": 269311317, "endTimeStamp": "071123-2200", "logFileType": "profilestats"}}
+2023-07-11 15:35:00,088 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2230__071123-2235.csv
+2023-07-11 15:35:00,088 DEBUG    Need to write line for:EAST_AGG_P:Impact:AppIducTime
+2023-07-11 15:35:00,088 DEBUG    Need to write line for:EAST_AGG_P::TotalIducTime
+2023-07-11 15:35:00,088 DEBUG    Need to write line for:EAST_AGG_P:GATEWAY:AppIducTime
+2023-07-11 15:35:00,088 DEBUG    Need to write line for:EAST_AGG_P:AUTH-Impact:AppIducTime
+2023-07-11 15:35:00,088 DEBUG    Need to write line for:EAST_AGG_P:WEBTOP:AppIducTime
+2023-07-11 15:40:00,028 DEBUG    received the following: {"EAST_AGG_P_profiler_report.log1": {"resourceApp": "", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "EAST_AGG_P", "metrics": {"EAST_AGG_P:Impact:AppIducTime": {"value": 0.004705, "resetCounter": true}, "EAST_AGG_P::TotalIducTime": {"value": 0.006671, "resetCounter": true}, "EAST_AGG_P:GATEWAY:AppIducTime": {"value": 0.001406, "resetCounter": true}, "EAST_AGG_P:AUTH-Impact:AppIducTime": {"value": 0.0, "resetCounter": true}, "EAST_AGG_P:WEBTOP:AppIducTime": {"value": 0.000559, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/netcool/omnibus/log/EAST_AGG_P_profiler_report.log1", "inode": 269311317, "endTimeStamp": "071123-2200", "logFileType": "profilestats"}}
+2023-07-11 15:40:00,029 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2235__071123-2240.csv
+2023-07-11 15:40:00,029 DEBUG    Need to write line for:EAST_AGG_P:Impact:AppIducTime
+2023-07-11 15:40:00,030 DEBUG    Need to write line for:EAST_AGG_P::TotalIducTime
+2023-07-11 15:40:00,030 DEBUG    Need to write line for:EAST_AGG_P:GATEWAY:AppIducTime
+2023-07-11 15:40:00,030 DEBUG    Need to write line for:EAST_AGG_P:AUTH-Impact:AppIducTime
+2023-07-11 15:40:00,030 DEBUG    Need to write line for:EAST_AGG_P:WEBTOP:AppIducTime
+2023-07-11 15:40:00,036 DEBUG    received the following: {"NCIPRIMARY_omnibuseventreader.log": {"resourceApp": "omnibuseventreader", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:omnibuseventreader:Updates": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Time": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Memory": {"value": 155636745, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NumReaderBuffer": {"value": 3, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:OSQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewEventsReadSec": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:NewRead": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:Read": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:ReadBuffer": {"value": 0, "resetCounter": true}, "NCIPRIMARY:omnibuseventreader:EventsReadSec": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_omnibuseventreader.log", "inode": 269307369, "endTimeStamp": "071123-2200", "logFileType": "eventreader"}, "NCIPRIMARY_eventprocessor.log": {"resourceApp": "eventprocessor", "rolled": false, "startTimeStamp": "071123-2155", "resourceNode": "NCIPRIMARY", "metrics": {"NCIPRIMARY:eventprocessor:ProcessingThreads": {"value": 9, "resetCounter": true}, "NCIPRIMARY:eventprocessor:DeltaQueue": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:CurrentQueueSize": {"value": 0, "resetCounter": true}, "NCIPRIMARY:eventprocessor:EventRatePerMinute": {"value": 0, "resetCounter": true}}, "logFileFullPath": "/opt/IBM/tivoli/impact/logs/NCIPRIMARY_eventprocessor.log", "inode": 272085590, "endTimeStamp": "071123-2200", "logFileType": "eventprocessor"}}
+2023-07-11 15:40:00,037 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2235__071123-2240.csv
+2023-07-11 15:40:00,037 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Updates
+2023-07-11 15:40:00,037 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Time
+2023-07-11 15:40:00,037 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Memory
+2023-07-11 15:40:00,037 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NumReaderBuffer
+2023-07-11 15:40:00,037 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:ReadBuffer
+2023-07-11 15:40:00,037 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewEventsReadSec
+2023-07-11 15:40:00,038 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:NewRead
+2023-07-11 15:40:00,038 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:Read
+2023-07-11 15:40:00,038 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:OSQueue
+2023-07-11 15:40:00,038 DEBUG    Need to write line for:NCIPRIMARY:omnibuseventreader:EventsReadSec
+2023-07-11 15:40:00,038 DEBUG    Opening file: /home/ncoadmin/csv//netcoolStats__071123-2235__071123-2240.csv
+2023-07-11 15:40:00,038 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:EventRatePerMinute
+2023-07-11 15:40:00,038 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:DeltaQueue
+2023-07-11 15:40:00,038 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:CurrentQueueSize
+2023-07-11 15:40:00,039 DEBUG    Need to write line for:NCIPRIMARY:eventprocessor:ProcessingThreads

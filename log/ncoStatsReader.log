@@ -1,0 +1,4 @@
+2023-07-11 14:56:36,531 INFO     Collection started at: 11/07/2023 14:56:36
+
+2023-07-11 14:56:36,531 INFO     initializing log file structure: /opt/IBM/tivoli/impact/logs/NCIPRIMARY_eventprocessor.log
+2023-07-11 14:56:36,532 INFO     initializing log file structure: /opt/IBM/tivoli/impact/logs/NCIPRIMARY_omnibuseventreader.log
