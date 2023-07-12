@@ -432,12 +432,19 @@ shutdownRequest = False
 logFileThread = {}
 threadCount = 0
 for file in myFiles:
-   logging.info("initializing log file structure: " + file)
-   initMetricDict(file, myFiles[file] )
-   logFileThread[file] = threading.Thread(target=logReader, args=(file, myFiles[file]))
-   logFileThread[file].daemon = True 
-   logFileThread[file].start() 
+   if os.path.exists(file):
+      logging.info("initializing log file structure: " + file)
+      initMetricDict(file, myFiles[file] )
+      logFileThread[file] = threading.Thread(target=logReader, args=(file, myFiles[file]))
+      logFileThread[file].daemon = True 
+      logFileThread[file].start() 
+      threadCount += 1
+   else:
+      logging.info("configured log file " + file + " does not exist. Ignoring this log file entry.")
 
+if threadCount == 0:
+   print("No valid log files find, exiting")
+   exit()
 # Finally, spawn a thread to write out data to csv, kafka, or watson API every 5 minutes
 
 publisherThread = threading.Thread(target=publisher)
