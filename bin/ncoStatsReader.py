@@ -1,9 +1,9 @@
-#!/usr/bin/python2
+#!/usr/bin/python
 
 logFileTypes = { "eventreader", "eventprocessor", "masterstats", "triggerstats", "profilestats" }
 
 import base64
-import urllib2
+#import urllib2
 import threading
 import json
 import datetime
@@ -14,6 +14,10 @@ import sys
 import re
 import logging
 
+try: 
+    import urllib.request as urllib2
+except ImportError:
+    import urllib2
 
 ###############################################
 #
@@ -176,13 +180,13 @@ def initMetricDict(myLog, logfiletype):
 def postMetricToWriter(myMetricDict):
 
      method = "POST"
-     #requestUrl = 'http://rdm-noi-rtp31:8888'
      requestUrl = ncoStatsWriterUrl
    
-     authHeader = 'Basic ' + base64.b64encode(ncoStatsWriterUsername + ":" + ncoStatsWriterPassword)
+     userAndPass = ncoStatsWriterUsername + ":" + ncoStatsWriterPassword
+     authHeader = 'Basic ' + base64.b64encode(userAndPass.encode("utf-8")).decode()
   
      try:
-        request = urllib2.Request(requestUrl, json.dumps(myMetricDict))
+        request = urllib2.Request(requestUrl, json.dumps(myMetricDict).encode("utf-8"))
         request.add_header("Content-Type",'application/json')
         request.add_header("Accept",'application/json')
         request.add_header("Authorization",authHeader)
@@ -192,7 +196,7 @@ def postMetricToWriter(myMetricDict):
         xmlout = response.read()
         return 0
   
-     except IOError, e:
+     except IOError as e:
         logging.info('Failed to open "%s".' % requestUrl)
         if hasattr(e, 'code'):
            logging.info('We failed with error code - %s.' % e.code)

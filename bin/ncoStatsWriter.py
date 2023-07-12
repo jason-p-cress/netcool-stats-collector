@@ -1,4 +1,4 @@
-#!/usr/bin/python2
+#!/usr/bin/python
 
 import logging
 import tempfile
@@ -9,8 +9,13 @@ import errno
 import base64
 import json
 import datetime
-import BaseHTTPServer
-from SimpleHTTPServer import SimpleHTTPRequestHandler
+#import BaseHTTPServer
+#from SimpleHTTPServer import SimpleHTTPRequestHandler
+
+try:
+    from BaseHTTPServer import BaseHTTPRequestHandler,HTTPServer
+except ImportError:
+    from http.server import BaseHTTPRequestHandler,HTTPServer
 
 auth = ""
 
@@ -141,8 +146,8 @@ def processMetrics(metricsDict):
     myFh.close()
 
 
-class AuthHandler(SimpleHTTPRequestHandler):
-    ''' Main class to present webpages and authentication. '''
+class AuthHandler(BaseHTTPRequestHandler):
+
     def do_HEAD(self):
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
@@ -163,7 +168,14 @@ class AuthHandler(SimpleHTTPRequestHandler):
 
         global auth
 
-        ctype = self.headers.getheader('Content-type')
+        if hasattr(self.headers, 'getheader'):
+            ctype = self.headers.getheader('Content-type')
+            authheader = self.headers.getheader('Authorization')
+            clength = self.headers.getheader('content-length')
+        else:
+            ctype = self.headers.get('Content-type')
+            authheader = self.headers.get('Authorization')
+            clength = self.headers.get('content-length')
 
         if ctype != 'application/json':
             #print("Wrong content-type (must be application/json)")
@@ -171,14 +183,16 @@ class AuthHandler(SimpleHTTPRequestHandler):
             self.end_headers()
             return
 
-        if self.headers.getheader('Authorization') == "Basic " + auth:
+        #if self.headers.getheader('Authorization') == "Basic " + auth:
+        if authheader == auth:
 
-            length = int(self.headers.getheader('content-length'))
-            message = self.rfile.read(length)
+            logging.debug("Authorization header received is: " + auth)
+
+            message = self.rfile.read(int(clength)).decode("utf-8")
 
             logging.debug("received the following: " + message)
             try:
-                metricsDict = json.loads(message)
+                metricsDict = json.loads(str(message))
             except ValueError as e:
                 logging.info("unable to parse json payload sent. Payload: " + str(message))
                 logging.info("Error: " + str(e))
@@ -191,6 +205,9 @@ class AuthHandler(SimpleHTTPRequestHandler):
             return
 
         else:
+            logging.info("Incorrect credentials received")
+            logging.info("Received: " + str(authheader))
+            logging.info("Needed: " + str(auth))
             self.send_response(401)
             self.end_headers()
             return
@@ -248,8 +265,10 @@ if __name__ == '__main__':
             print("csvLocation (" + csvLocation + ") is not writable!")
             exit()
 
-    auth = base64.b64encode(ncoStatsWriterUsername + ":" + ncoStatsWriterPassword)
+    userAndPass = ncoStatsWriterUsername + ":" + ncoStatsWriterPassword
 
-    server_class = BaseHTTPServer.HTTPServer
+    auth = 'Basic ' + base64.b64encode(userAndPass.encode("utf-8")).decode()
+
+    server_class = HTTPServer
     httpd = server_class(('', port), AuthHandler)
     httpd.serve_forever()
