@@ -172,8 +172,12 @@ def initMetricDict(myLog, logfiletype):
         eventProcessorName = myLog.split(impactServerName + "_")[-1]
         logStats[logFileName]["resourceNode"] = impactServerName
         logStats[logFileName]["resourceApp"] = eventProcessorName.replace(".log", "")
-    if logfiletype == "profilestats" or logfiletype == "triggerstats":
+    if logfiletype == "profilestats":
         omnibusServerName = logFileName.split('_profiler_report')[0]
+        logStats[logFileName]["resourceNode"] = omnibusServerName
+        logStats[logFileName]["resourceApp"] = ""
+    if logfiletype == "triggerstats":
+        omnibusServerName = logFileName.split('_trigger_stats')[0]
         logStats[logFileName]["resourceNode"] = omnibusServerName
         logStats[logFileName]["resourceApp"] = ""
 
@@ -290,7 +294,48 @@ def processLine(myLog, logfiletype, line):
    elif logfiletype == "masterstats":
        logging.debug("processing master stats line - not implemented yet")
    elif logfiletype == "triggerstats":
-       logging.debug("processing trigger stats line - not implemented yet")
+       # Wed Jul 12 14:52:44 2023:     Trigger time for 'resync_finished': 0.000000s
+       # Wed Jul 12 14:52:44 2023: Time for all triggers in report period (60s): 0.015309s
+       #logging.debug("processing trigger stats line - not implemented yet")
+       logFileName = myLog.split('/')[-1]
+       profileMetrics = [ "TotalTriggersIducTime" ]
+       pattern = re.compile('.*Time for all triggers in report .*\: (.*)s$')
+       vals = re.findall(pattern, line)
+       if(len(vals) > 0):
+          resourceAndMetric = logStats[logFileName]["resourceNode"].replace(":", "-") + ":" + ":TotalTriggersIducTime"
+          if(logStats[logFileName]["metrics"].get(resourceAndMetric) is None):
+             logStats[logFileName]["metrics"][resourceAndMetric] = {}
+             logStats[logFileName]["metrics"][resourceAndMetric]["resetCounter"] = True
+          for value in vals:
+              if(logStats[logFileName]["metrics"][resourceAndMetric]["resetCounter"] == True):
+                  logStats[logFileName]["metrics"][resourceAndMetric]["value"] = round(float(value), 6)
+                  logStats[logFileName]["metrics"][resourceAndMetric]["resetCounter"] = False
+              else:
+                  currentMetricValue = logStats[logFileName]["metrics"][resourceAndMetric]["value"]
+                  logStats[logFileName]["metrics"][resourceAndMetric]["value"] = round((currentMetricValue + float(value)) / 2, 6)
+          #print(str(logStats[logFileName]))
+       else:
+           profileMetric = "TriggerIducTime" 
+           pattern = re.compile('.*Trigger time for \'(.*)\'\: (.*)s$')
+           vals = re.findall(pattern, line)
+           if(len(vals) > 0):
+              # we got a match
+              for value in vals:
+                  application = value[0] 
+                  execTime = round(float(value[1]), 6)
+                  resourceAndMetric = logStats[logFileName]["resourceNode"].replace(":", "-") + ":" + application.replace(":", "-") + ":" + profileMetric.replace(":", "-")
+                  if(logStats[logFileName]["metrics"].get(resourceAndMetric) is None):
+                     # first time we're seeing this resource, so lets initialize the dictionary for this objectserver/application
+                     logStats[logFileName]["metrics"][resourceAndMetric] = {}
+                     logStats[logFileName]["metrics"][resourceAndMetric]["value"] = 0
+                     logStats[logFileName]["metrics"][resourceAndMetric]["resetCounter"] = True
+                  if(logStats[logFileName]["metrics"][resourceAndMetric]["resetCounter"] == True):
+                      logStats[logFileName]["metrics"][resourceAndMetric]["value"] = round(float(value[1]), 6)
+                      logStats[logFileName]["metrics"][resourceAndMetric]["resetCounter"] = False
+                  else:
+                      currentMetricValue = logStats[logFileName]["metrics"][resourceAndMetric]["value"]
+                      logStats[logFileName]["metrics"][resourceAndMetric]["value"] = round((currentMetricValue + execTime ) / 2, 6)
+                  logging.debug(str(logStats[logFileName]))
    elif logfiletype == "profilestats":
        logFileName = myLog.split('/')[-1]
        profileMetrics = [ "TotalIducTime" ]
