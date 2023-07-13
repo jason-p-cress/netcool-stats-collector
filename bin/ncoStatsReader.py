@@ -509,11 +509,10 @@ while threading.active_count() > 0:
       currInode = os.stat(logStats[logEntry]["logFileFullPath"]).st_ino
       if logStats[logEntry]["inode"] != currInode:
          logStats[logEntry]["rolled"] = True
-         if(debug):
-            print("#################################################")
-            print("#              log file rolled                  #")
-            print("# logStats has " + str(logStats[logEntry]["inode"]) + " disk inode is: " + str(currInode) + " #")
-            print("#################################################")
+         logging.debug("#################################################")
+         logging.info("#              log file rolled                  #")
+         logging.debug("# logStats has " + str(logStats[logEntry]["inode"]) + " disk inode is: " + str(currInode) + " #")
+         logging.debug("#################################################")
 
    time.sleep(30)
 
