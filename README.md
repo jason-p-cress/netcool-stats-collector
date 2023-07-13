@@ -42,13 +42,13 @@ Two files must be configured for the reader component.
 The configuration file located at conf/ncoStatsReader.conf must be configured with the following
 properties:
 
-ncoStatsWriterUrl: This will be the URL of where the writer process is running
+**ncoStatsWriterUrl:** This will be the URL of where the writer process is running
 
-ncoStatsWriterUsername: username for writer authentication, must match the writer configuration
+**ncoStatsWriterUsername:** username for writer authentication, must match the writer configuration
 
-ncoStatsWriterPassword: password for writer authentication
+**ncoStatsWriterPassword:** password for writer authentication
 
-loggingLevel: set the logging level, either INFO or DEBUG
+**loggingLevel:** set the logging level, either INFO or DEBUG
 
 ### files.conf
 
@@ -77,15 +77,15 @@ not in the default location ( /usr/bin/python ).
 The configuration file located at conf/ncoStatsWriter.conf must be configured with the following
 properties:
 
-listeningPort: the TCP port that the writer component will listen on for updates from readers
+**listeningPort:** the TCP port that the writer component will listen on for updates from readers
 
-ncoStatsWriterUsername: the username required for reader authentication
+**ncoStatsWriterUsername:** the username required for reader authentication
 
-ncoStatsWriterPassword: the password required for reader authentication
+**ncoStatsWriterPassword:** the password required for reader authentication
 
-csvLocation: the location where the writer will write out the CSV files for PI
+**csvLocation:** the location where the writer will write out the CSV files for PI
 
-loggingLevel: either "INFO" or "DEBUG" - note that DEBUG will create a lot of messages
+**loggingLevel:** either "INFO" or "DEBUG" - note that DEBUG will create a lot of messages
 
 ## Running the writer component
 
