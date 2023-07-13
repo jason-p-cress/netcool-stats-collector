@@ -98,13 +98,24 @@ def loadProperties(filepath, sep='=', comment_char='#'):
                 props[key] = value
     return props
 
+##########################
+#
+# Shutdown request handler
+#
+##########################
 
 def shutdownHandler(*args):
    shutdownRequest = True
    raise SystemExit('Exiting')
 
-def reconfigHandler(*args):
 
+#############################
+#
+# Reconfigure request handler
+#
+#############################
+
+def reconfigHandler(*args):
 
    # Currently not implemented 
 
@@ -113,6 +124,13 @@ def reconfigHandler(*args):
    logging.info("# Re-reading datachannel configuration file.. #")
    logging.info("#                                             #")
    logging.info("###############################################")
+
+
+######################################################################
+#
+# Function to read the files.conf file to obtain log files of interest
+#
+######################################################################
 
 def getLogFileConfig(sep=',', comment_char='#'):
 

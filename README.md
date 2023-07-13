@@ -55,10 +55,10 @@ properties:
 The files.conf file contains the path and the log file type. The following log file types are
 currently supported:
 
-eventprocessor: Impact event processor log
-eventreader: Impact event reader log
-profilestats: OMNIbus profiler log (use the log file ending in .log1)
-triggerstats: OMNIbus trigger stats log (use the log file ending in .log1)
+eventprocessor: Impact event processor log  
+eventreader: Impact event reader log  
+profilestats: OMNIbus profiler log (use the log file ending in .log1)  
+triggerstats: OMNIbus trigger stats log (use the log file ending in .log1)  
 
 
 ### Running the reader component
