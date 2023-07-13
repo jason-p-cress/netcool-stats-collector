@@ -65,6 +65,10 @@ triggerstats: OMNIbus trigger stats log (use the log file ending in .log1)
 
 Once the reader is configured, you can run the Python script located at bin/ncoStatsReader.py
 
+```
+$ bin/ncoStatsReader.py &
+```
+
 Note that you may need to modify the first line to specify the location of Python, if it is
 not in the default location ( /usr/bin/python ).
 
