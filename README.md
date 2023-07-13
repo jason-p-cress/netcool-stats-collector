@@ -68,5 +68,26 @@ Once the reader is configured, you can run the Python script located at bin/ncoS
 Note that you may need to modify the first line to specify the location of Python, if it is
 not in the default location ( /usr/bin/python ).
 
+## Configuring the writer component
 
+The configuration file located at conf/ncoStatsWriter.conf must be configured with the following
+properties:
+
+listeningPort: the TCP port that the writer component will listen on for updates from readers
+
+ncoStatsWriterUsername: the username required for reader authentication
+
+ncoStatsWriterPassword: the password required for reader authentication
+
+csvLocation: the location where the writer will write out the CSV files for PI
+
+loggingLevel: either "INFO" or "DEBUG" - note that DEBUG will create a lot of messages
+
+## Running the writer component
+
+Once the writer is configured, you can run the Python script located at bin/ncoStatsWriter.py:
+
+```
+$ bin/ncoStatsWriter.py &
+```
 
